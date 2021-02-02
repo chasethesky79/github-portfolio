@@ -1,23 +1,17 @@
 import './Header.css';
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import Link from '../Link/Link'
 
-export default function Header({logo}){
+export default function Header({ logo }){
     return (
         <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> 
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+            Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <Link url='https://reactjs.org' title='Learn React'/>
+        </header> 
     )
 }
 
