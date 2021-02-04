@@ -7,11 +7,9 @@ export default function Header(){
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
             <h1>
                 My Github Portfolio
             </h1>
-            </p>
         </header> 
     )
 }
