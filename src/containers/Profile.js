@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './Profile.css';
 
 export default function Profile() {
     const [ profileSummary, setProfileSummary ] = useState({ data: {}, loading: true });
@@ -13,10 +14,10 @@ export default function Profile() {
     } fetchData();     
     }, []);
     return (
-        <div>
+        <div className='Profile-container'>
         { loading && <div>Loading ...</div> }
+        <img className='Profile-avatar' src={avatar_url} alt='avatar'/>
         <ul>
-            <li>avatar_url: {avatar_url}</li>
             <li>html_url: {html_url}</li>
             <li>repos_url: {repos_url}</li>
             <li>name: {name}</li>

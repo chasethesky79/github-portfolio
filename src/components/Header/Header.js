@@ -1,16 +1,17 @@
 import './Header.css';
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from '../Link/Link'
+import logo from '../../GitHub-Mark-Light-64px.png'
 
-export default function Header({ logo }){
+export default function Header(){
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
-            Edit <code>src/App.js</code> and save to reload.
+            <h1>
+                My Github Portfolio
+            </h1>
             </p>
-            <Link url='https://reactjs.org' title='Learn React'/>
         </header> 
     )
 }
