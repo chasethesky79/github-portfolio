@@ -15,10 +15,15 @@ const HeaderWrapper = styled.div`
     color: white;
 `;
 
+const Logo = styled.img`
+height: 64px;
+pointer-events: none;
+`
+
 export default function Header(){
     return (
         <HeaderWrapper>
-            <img src={logo} className="App-logo" alt="logo" />
+            <Logo src={logo} alt="logo" />
             <h1>
                 My Github Portfolio
             </h1>
