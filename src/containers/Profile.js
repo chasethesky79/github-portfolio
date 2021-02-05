@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Profile.css';
+import  { ProfileWrapper } from '../styled-components/styled-components'
 import List from '../containers/List';
 
 export default function Profile() {
@@ -17,10 +17,10 @@ export default function Profile() {
     } fetchData();     
     }, []);
     return (
-        <div className='Profile-container'>
-        { loading && <div>Loading ...</div> }
-        <img className='Profile-avatar' src={avatar_url} alt='avatar'/>
-        <List items={items}/>
-        </div>
+        <ProfileWrapper>
+            { loading && <div>Loading ...</div> }
+            <img className='Profile-avatar' src={avatar_url} alt='avatar'/>
+            <List items={items}/>
+        </ProfileWrapper>
     )
 }
