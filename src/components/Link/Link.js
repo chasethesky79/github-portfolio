@@ -1,16 +1,20 @@
 import './Link.css'
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const InnerLink = styled.a`
+color: #61dafb;
+`
 
 export default function Link({ url, title }){
     return (
-        <a
-          className="App-link"
+        <InnerLink
           href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
           {title}
-        </a>
+        </InnerLink>
     )
 }
 
