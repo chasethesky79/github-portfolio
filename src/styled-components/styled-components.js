@@ -16,3 +16,6 @@ export const ProfileWrapper = styled.div`
 width: 50%;
 margin: 10px auto;
 `
+export const ProfileImgWrapper = styled.img`
+width: 150px;
+`

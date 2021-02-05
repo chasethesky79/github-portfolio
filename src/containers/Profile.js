@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import  { ProfileWrapper } from '../styled-components/styled-components'
+import  { ProfileWrapper, ProfileImgWrapper } from '../styled-components/styled-components'
 import List from '../containers/List';
 
 export default function Profile() {
@@ -19,7 +19,7 @@ export default function Profile() {
     return (
         <ProfileWrapper>
             { loading && <div>Loading ...</div> }
-            <img className='Profile-avatar' src={avatar_url} alt='avatar'/>
+            <ProfileImgWrapper src={avatar_url} alt='avatar'/>
             <List items={items}/>
         </ProfileWrapper>
     )
