@@ -29,3 +29,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 `
+export const TitleStyle = styled.h2`
+ padding: 10px o;
+ border-bottom: 1px solid lightgray
+`
